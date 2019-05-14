@@ -88,10 +88,8 @@
   collection: events
   sphere_url: /events/gatheringforopensciencehardware/
   subtitle: GOSH
-  start-date: Sept/Oct 2018
+  start-date: 2018-09-01
   type-org: Community
-  city: Shenzhen
-  country: China
   tags: 
     - conference
   links:
