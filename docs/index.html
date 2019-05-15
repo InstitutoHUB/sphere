@@ -374,7 +374,7 @@
   <div class="ui mini horizontal divided link list">
     <!-- Display last edited date of the page -->
     <div class=" disabled item">
-       Last edit: 14-Jan-19
+       Last edit: 15-May-19
     </div>
 
     <!-- Link to the page in the Github Repository -->
@@ -461,6 +461,74 @@
     </ul>
   </li>
 </ul>
+
+<hr />
+
+<h3 id="yaml-frontmatter-reference">yaml frontmatter reference</h3>
+<p>these are all the fields you can use in the yaml-frontmatter of your markdown text file describing your project <code class="highlighter-rouge">md</code> .</p>
+
+<p>note:</p>
+<ul>
+  <li>surround the yaml block with three dashes <code class="highlighter-rouge">---</code>. the top three should be on the first line of the file. the bottom should be directly below your yaml block.</li>
+  <li><code class="highlighter-rouge">#</code> is a comment in yaml. in the example below, remove the hash characters when you enter your information.</li>
+  <li>look on github for real examples. (click the “raw” button when viewing the md file to see the yaml in plaintext).</li>
+  <li>include a file named <code class="highlighter-rouge">logo.png</code> or <code class="highlighter-rouge">logo.jpg</code> or <code class="highlighter-rouge">logo.svg</code> in your folder. it will automatically be used on your page. <a href="docs/guides/writing/#logo">documentation for logos</a></li>
+  <li>if you add a promotion, upload an image to your folder, then add it to the promotion block with a link pointing to <code class="highlighter-rouge">/&lt;path&gt;/&lt;to&gt;&lt;/your&gt;&lt;/folder&gt;/&lt;imagename&gt;.ext</code>. <strong>do not use an external link pointing to externally hosted content!</strong> <a href="/docs/guides/writing/#promotion-boxes">docs</a></li>
+</ul>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
+<span class="c1">#BASIC INFO</span>
+<span class="na">title</span><span class="pi">:</span> <span class="c1"># Name of initiative</span>
+<span class="na">subtitle</span><span class="pi">:</span> <span class="c1"># Short description. 200 characters max!</span>
+<span class="na">predecessor</span><span class="pi">:</span> <span class="c1"># the previous name of the entry</span>
+<span class="na">successor</span><span class="pi">:</span> <span class="c1"># the initiative that evolved from the initiative</span>
+<span class="na">type-org</span><span class="pi">:</span> <span class="c1"># type is the social/legal organization, e.g.: company, university, museum, community, local government, etc.</span>
+<span class="c1">#ACTIVITY</span>
+<span class="na">start-date</span><span class="pi">:</span> <span class="c1">#ISO format: 'YYYY-MM-DD hh:mm', 'YYYY-MM-DD', 'YYYY-MM', or 'YYYY'</span>
+<span class="na">end-date</span><span class="pi">:</span> <span class="c1"># ISO format: 'YYYY-MM-DD hh:mm', 'YYYY-MM-DD', 'YYYY-MM', or 'YYYY'</span>
+<span class="na">status</span><span class="pi">:</span> <span class="c1"># add or let be AUTOMATIC!! 'active' by default, unless `end-date` in the past then 'inactive', or unless `start-date` in future then 'planned'. Useful when it is neither 'active', 'inactive', or 'planned'</span>
+<span class="c1">#RELATIONSHIPS. Must either exist in the sphere repository, or have an external link in markdown</span>
+<span class="na">hosts</span><span class="pi">:</span> <span class="c1"># Is the space or organization behind the initiative, e.g. a university or a makerspace</span>
+  <span class="pi">-</span>  <span class="c1"># host. Use the exact 'title' of another entry to automatically display as a linked item</span>
+  <span class="pi">-</span> <span class="c1"># another host</span>
+<span class="na">partners</span><span class="pi">:</span> <span class="c1"># collaborators, partners, or affiliations worth mentioning</span>
+  <span class="pi">-</span>  <span class="c1"># partner. If rendering a markdown link wrap in "" or ''</span>
+  <span class="pi">-</span> <span class="c1"># another partner</span>
+<span class="c1">#LOCATION</span>
+<span class="na">address</span><span class="pi">:</span> <span class="c1"># street and number</span>
+<span class="na">directions</span><span class="pi">:</span> <span class="c1"># specific directions to find location</span>
+<span class="na">city</span><span class="pi">:</span> <span class="c1"># city name in english</span>
+<span class="na">state</span><span class="pi">:</span> <span class="c1"># state, province, canton name in english</span>
+<span class="na">country</span><span class="pi">:</span> <span class="c1"># country name in english</span>
+<span class="na">_geoloc</span><span class="pi">:</span> <span class="c1"># Geolocation coordinates for mapping</span>
+  <span class="na">lat</span><span class="pi">:</span> <span class="c1"># latitude number</span>
+  <span class="na">lng</span><span class="pi">:</span> <span class="c1"># longitude number</span>
+<span class="c1">#LINKS. Check the Writing Guide for all the brand icons available</span>
+<span class="na">website</span><span class="pi">:</span> <span class="c1"># URL to main external website</span>
+<span class="na">email</span><span class="pi">:</span> <span class="c1"># email</span>
+<span class="na">twitter</span><span class="pi">:</span> <span class="c1"># Twitter URL</span>
+<span class="na">facebook</span><span class="pi">:</span> <span class="c1"># Facebook URL</span>
+<span class="na">links</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">URL</span><span class="pi">:</span> <span class="c1"># URL to external link</span>
+    <span class="na">tooltip</span><span class="pi">:</span> <span class="c1"># when mouse hovers, what the pop over tool tip will say</span>
+  <span class="pi">-</span> <span class="na">URL</span><span class="pi">:</span> <span class="c1"># Adding more link icons</span>
+    <span class="na">tooltip</span><span class="pi">:</span> <span class="c1"># Popover tip</span>
+<span class="c1">#TAGS</span>
+<span class="na">tags</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="c1"># tag</span>
+  <span class="pi">-</span> <span class="c1"># another tag</span>
+<span class="c1">#PROMOTIONS</span>
+<span class="na">promotions</span><span class="pi">:</span>
+  <span class="pi">-</span> <span class="na">text</span><span class="pi">:</span> <span class="c1"># write here your promotion</span>
+    <span class="na">button</span><span class="pi">:</span> <span class="c1"># text in the button</span>
+    <span class="na">URL</span><span class="pi">:</span> <span class="c1"># link for the button</span>
+    <span class="na">image</span><span class="pi">:</span> <span class="c1"># path to image for landing page carousel, like so: /&lt;path&gt;/&lt;to&gt;/&lt;your&gt;/&lt;folder&gt;/&lt;imagename.ext&gt;</span>
+  <span class="pi">-</span> <span class="na">text</span><span class="pi">:</span> <span class="c1"># second promotion starts with another dash</span>
+    <span class="na">button</span><span class="pi">:</span> <span class="c1"># text in the button</span>
+    <span class="na">URL</span><span class="pi">:</span> <span class="c1"># link for the button</span>
+    <span class="na">color</span><span class="pi">:</span> <span class="c1">#specify a background color instead of an image. wrap the color in '', e.g. '#43BB7A'    </span>
+<span class="nn">---</span>
+</code></pre></div></div>
 
 
 </article>

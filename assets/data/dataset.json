@@ -3697,29 +3697,6 @@
     }
   },
   {
-    "title": "Feles",
-    "collection": "startups",
-    "url": "/startups/feles/",
-    "subtitle": "Build desktop biolabs for everyone",
-    "start-date": "2018-07-01",
-    "end-date": null,
-    "status": "active",
-    "hosts": null,
-    "partners": null,
-    "type-org": "Company/Startup",
-    "address": "625 Massachusetts Avenue,",
-    "directions": null,
-    "city": "Boston",
-    "state": null,
-    "post-code": null,
-    "country": "United States",
-    "_geoloc": null,
-    "tags": ["Hardware","Biotechnology"],
-    "links": {
-      "website": "http://www.felesbio.com"
-    }
-  },
-  {
     "title": "Folia Water",
     "collection": "startups",
     "url": "/startups/foliawater/",
@@ -4119,6 +4096,29 @@
       "facebook": "https://www.facebook.com/TheODINinc",
       "twitter": "https://twitter.com/TheODINinc",
       "website": "http://www.the-odin.com/"
+    }
+  },
+  {
+    "title": "Feles",
+    "collection": "startups",
+    "url": "/startups/feles/",
+    "subtitle": "Build desktop biolabs for everyone",
+    "start-date": "2018-07-01",
+    "end-date": null,
+    "status": "active",
+    "hosts": null,
+    "partners": null,
+    "type-org": "Company/Startup",
+    "address": "625 Massachusetts Avenue,",
+    "directions": null,
+    "city": "Boston",
+    "state": null,
+    "post-code": null,
+    "country": "United States",
+    "_geoloc": null,
+    "tags": ["Hardware","Biotechnology"],
+    "links": {
+      "website": "http://www.felesbio.com"
     }
   },
 ]
