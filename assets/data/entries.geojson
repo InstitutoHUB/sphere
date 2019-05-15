@@ -1876,8 +1876,8 @@
             "city": "New York",
             "state": "New York",
             "country": "United States",
-            "status": "active",
-            "color": "blue",
+            "status": "inactive",
+            "color": "grey",
             "marker": "circle",
             "collection": "networks"
           }

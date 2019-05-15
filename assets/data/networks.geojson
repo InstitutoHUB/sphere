@@ -115,7 +115,7 @@
             "state": "New York",
             "country": "United States",
             "type-org": "non-profit",
-            "color": "blue",
+            "color": "grey",
             "marker": "circle",
             "collection": "networks"
           }
