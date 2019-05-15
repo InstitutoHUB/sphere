@@ -171,11 +171,11 @@
             "title": "Tool Foundry",
             "url": "/incubators/toolfoundry/",
             "address": null,
-            "city": "Philadelphia",
+            "city": "NYC",
             "state": null,
             "country": "United States",
-            "type-org": "Education",
-            "color": "blue",
+            "type-org": "nonprofit",
+            "color": "grey",
             "marker": "circle",
             "collection": "incubators"
           }
