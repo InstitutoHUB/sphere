@@ -890,14 +890,15 @@
   collection: incubators
   sphere_url: /incubators/toolfoundry/
   subtitle: Advancing accessible tools for scientific discovery
-  type-org: nonprofit
-  city: NYC
+  start-date: 2019-02-16
+  type-org: Education
+  city: Philadelphia
   country: United States
   tags: 
-    - hardware
+    - art
   links:
+    facebook: https://m.facebook.com/christopher.sweeney.7771/
     twitter: https://twitter.com/Tool_Foundry
-    instagram: https://www.instagram.com/tool_foundry/
     website: https://www.toolfoundry.org/
 
 
